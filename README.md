@@ -1,8 +1,8 @@
-appgyver-js-api
-===============
+# Official appgyver.js API documentation.
 
-Official appgyver.js API documentation.
+Here be dragons.
+
 
 ## Topics
 
-* [geolocation](/geolocation/geolocation.md)
+* [geolocation](geolocation/geolocation.md)
