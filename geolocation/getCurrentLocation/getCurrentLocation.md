@@ -6,7 +6,7 @@
 Upon calling the method, the user will receive a native prompt where the application asks to use geolocation. If the request is denied, geolocation information cannot be returned. If the request is accepted, geolocation information is returned, and no further prompts will appear.
 
 ## Syntax
-`AG.geolocation.getCurrentLocation(successCallback(coords), failureCallback)`
+`AG.geolocation.getCurrentLocation(**successCallback(coords)**, **failureCallback**)`
 
 ## Parameters
 
