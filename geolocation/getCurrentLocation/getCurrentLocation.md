@@ -14,9 +14,9 @@ Upon calling the method, the user will receive a native prompt where the applica
 
 A function that is run when the coordinates are retrieved successfully. The function takes as a parameter a string that contains the GPS coordinates in the syntax:
 
-`"latitude,longitude"`
+`latitude,longitude`
 
-**failureCallback** *(optional)* 
+**failureCallback** *`optional`* 
 
 A function that is run when the coordinates can not be retrieved. If it is missing, the method fails silently.
 
@@ -25,9 +25,9 @@ A function that is run when the coordinates can not be retrieved. If it is missi
 
 ## Quick example:
 
-AG.geolocation.getCurrentLocation(function(coords){
-  AG.GUI.alert("Your GPS coordinates are:", coords);
-})
+	AG.geolocation.getCurrentLocation(function(coords){
+  		AG.GUI.alert("Your GPS coordinates are:", coords);
+	})
 
 ## Supported platforms
 * iOS

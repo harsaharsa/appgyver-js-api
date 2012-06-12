@@ -5,4 +5,4 @@ Here be dragons.
 
 ## Topics
 
-* [geolocation](geolocation/geolocation.md)
+* [geolocation](AppGyver/appgyver-js-api/tree/master/geolocation/geolocation.md)
