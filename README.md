@@ -13,6 +13,7 @@ As is common in JavaScript, many methods of the appgyver.js API take `successCal
 To explain how callback functions work, let's look at an example from the AG.geolocation API namespace.
 
 > **Callback functions example**
+>
 > We can get the mobile device's current GPS coordinates with the method:
 >
 > `AG.geolocation.getCurrentLocation(successCallback(coords), failureCallback)` 
