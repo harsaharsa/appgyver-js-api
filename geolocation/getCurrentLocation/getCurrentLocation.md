@@ -10,11 +10,11 @@ Upon calling the method, the user will receive a native prompt where the applica
 
 ## Parameters
 
-*function* **successCallback**
+**>** *function* **successCallback**
 
 A function that is run when the coordinates are retrieved successfully. The function takes as a parameter a string that contains the GPS coordinates in the syntax: `latitude,longitude`.
 
-*function* **failureCallback** *`optional`* 
+**>** *function* **failureCallback** *`optional`* 
 
 A function that is run when the coordinates can not be retrieved. If it is missing, the method fails silently.
 
