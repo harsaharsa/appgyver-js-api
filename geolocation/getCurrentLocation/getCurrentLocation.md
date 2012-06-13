@@ -30,7 +30,7 @@ AG.geolocation.getCurrentLocation(successCallback(coords), failureCallback)
 The method polls the native location API and waits a maximum of 10 seconds to get a location. If a location cannot be resolved in this time, the method fails and calls `failureCallback`. If a location is successfully retrieved, `successCallback` is called and the location data is passed on to the callback function as a parameter.
 
 ## Returns 
-[AG.Deferred()](../../Deferred.md)
+[AG.Deferred()](../../Deferred/Deferred.md)
 
 ## Supported platforms
 * iOS

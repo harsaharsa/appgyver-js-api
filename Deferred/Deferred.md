@@ -29,7 +29,7 @@ If the method passes back some data in the form of a callback parameter, the sam
 
   // Defining the callback for both states:
   deferred.always(function(){
-    alert("Deferred was resolved or rejected.");
+    AG.GUI.alert("Deferred was resolved or rejected.");
   });
 
   // Setting the Deferred object into resolved state manually:
