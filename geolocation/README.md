@@ -7,6 +7,7 @@ The **AG.geolocation** namespace contains methods that give access to the device
 
 ## Full example ##
 
+```html
 	<!DOCTYPE html>
 	<html lang="en">
 	  <head>

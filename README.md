@@ -30,11 +30,11 @@ Each method's API documentation explains in more detail:
 
 Appgyver.js uses native animated transitions between documents and automatically maintains navigation history throughout the app. This functions in a similar way to typical browser navigation, but uses the native GUI elements instead.
 
-The `appgyver.js` library has the navigation extension included, monitoring all clicked <a></a> tags in the HTML document.
+The `appgyver.js` library has the navigation extension included by default. All `<a></a>` tags in the HTML document are monitored and native transitions are triggered automatically.
 
-To disable native transitions manually, use the `data-navigation="false"` data attribute in the <a></a> tag.
+To disable native transitions manually, use the `data-navigation="false"` data attribute in the link tag: `<a data-navigation="false", href="myLink.html">link</a>`
 
-To disable native transitions and navigation logic for the whole project, use `appgyver.core.js` instead. You can then load the navigation extension manually by loading `appgyver.extensions.navigation.js` after `appgyver.core.js` in the HTML code.
+To disable native transitions and navigation logic for the whole project, use the `appgyver.core.js` library instead. If you want, you can then load the navigation extension manually by loading `appgyver.extensions.navigation.js` after `appgyver.core.js` in the HTML code.
 
 ## Topics
 

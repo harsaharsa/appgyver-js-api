@@ -7,6 +7,7 @@ Upon calling the method, the user will receive a native prompt where the applica
 
 ## Quick example:
 
+```javascript
 	AG.geolocation.getCurrentLocation(function(coords){
   		AG.GUI.alert("Your GPS coordinates are:", coords);
 	});
