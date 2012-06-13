@@ -38,7 +38,7 @@ To disable native transitions and navigation logic for the whole project, use th
 
 ## Topics
 
-* [geolocation](appgyver-js-api/tree/master/geolocation/README.md)
+* [geolocation](appgyver-js-api/tree/master/geolocation/geolocation.md)
 
 
 
