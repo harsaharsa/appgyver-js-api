@@ -13,27 +13,28 @@ If the method passes back some data in the form of a callback parameter, the sam
 ## Example
 
 ```javascript
-  // Creating the deferred object, note that the successCallback
+  // Creating the deferred object, note that the successCallback 
   // and failureCallback functions are left out:
-  var deferredLocation = AG.geolocation.getCurrentLocation();
+  var deferredLoc = AG.geolocation.getCurrentLocation();
 
   // Defining the callback for resolved state:
-  deferredLocation.done(function(coords) {
+  deferredLoc.done(function(coords) {
     AG.GUI.alert("Your coordinates are:" + coords);
   });
 
   // Defining the callback for rejected state:
-  deferred.fail(function(){
+  deferredLoc.fail(function(){
     AG.GUI.alert("Could not retreive coordinates.");
   });
 
   // Defining the callback for both states:
-  deferred.always(function(){
+  deferredLoc.always(function(){
     AG.GUI.alert("Deferred was resolved or rejected.");
   });
 
-  // Setting the Deferred object into resolved state manually:
-  deferred.resolve("My argument.");
+  // Setting the Deferred object into resolved state manually.
+  // The arguments given are passed on to the Deferred.done function as parameters:
+  deferredLoc.resolve("In Siberia");
 
   // Setting the Deferred object into rejected state manually:
   deferred.reject();
