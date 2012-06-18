@@ -7,11 +7,11 @@ You can add compass event listeners to the current view. When you add an event l
 You can have multiple compass event listeners in a single view. When you call the `AG.compass.startTracking` method, all of them start receiving compass data. The compass tracking is view-specific, so if you have other compass event listeners in another view, you need to call `startTracking` or `stopTracking` separately there.
 
 ## Methods ##
-* [AG.compass.addEventListener](compass/addEventListener.md)
-* [AG.compass.removeAllEventListeners](compass/removeAllEventListners.md)
-* [AG.compass.removeEventListener](compass/removeEventListener.md)
-* [AG.compass.startTracking](compass/startTracking.md)
-* [AG.compass.stopTracking](compass/stopTracking.md)
+* [AG.compass.addEventListener](methods/addEventListener.md)
+* [AG.compass.removeAllEventListeners](methods/removeAllEventListners.md)
+* [AG.compass.removeEventListener](methods/removeEventListener.md)
+* [AG.compass.startTracking](methods/startTracking.md)
+* [AG.compass.stopTracking](methods/stopTracking.md)
 
 ## Properties ##
 

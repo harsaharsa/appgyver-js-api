@@ -3,7 +3,7 @@
 ## Summary
 `addEventListener()` adds a new compass event listener to the current view. 
 
-The event listener's callback function is triggered when the compass is tracking and registers a device orientation change.
+The event listener's callback function is triggered when the compass is tracking for the current view and registers a device orientation change.
 
 ## Quick example:
 ```javascript
@@ -31,11 +31,11 @@ AG.compass.addEventListener(successCallback(heading, accuracy))
 
 The event listener is added for the current view. This is done by including the event listener's callback function into an array of callback functions that get triggered each time the device orientation changes.
 
-See the documentation for the [`AG.compass.startTracking`](starttracking.md) method for more information about how the compass data gets updated.
+See the documentation for the [`AG.compass.startTracking`](startTracking.md) method for more information about how the compass data gets updated.
 
 ## Returns 
 * *string* **listener_id**
-  A string value containing the listener's unique id, to be used with [`AG.compass.removeEventListener(listener_id)`](removeEventListener.md).
+  A string value containing the listener's unique id, to be used with [`AG.compass.removeEventListener`](removeEventListener.md).
 
 ## Supported platforms
 * iOS
