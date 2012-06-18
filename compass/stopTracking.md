@@ -28,7 +28,7 @@ None.
 
 The method removes from the current view the internal event listener that tracks device orientation changes and triggers the compass event listeners' callback functions. After calling this method, the compass event listeners are inactive until the [`AG.compass.startTracking`](startTracking.md) method is called again..
 
-This method sets the [`AG.compass.listener`](listener.md) field to null. Checking if the field is null is a good way to see if compass tracking is currently inactive for this view.
+This method sets the [`AG.compass.listener`](listener.md) property to null. Checking if the property is null is a good way to see if compass tracking is currently inactive for this view.
 
 ## Returns 
 

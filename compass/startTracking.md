@@ -28,7 +28,7 @@ None.
 
 The method creates an internal event listener for the current view. The event listener listens for a `deviceorientation` event. Once this event is registered (i.e. the device orientation has changed), the compass heading and accuracy are retrieved from the native API. They are then passed on as parameters to the callback functions of every compass event listener in the current view, and the callback functions get triggered.
 
-This method sets the [`AG.compass.listener`](listener.md) field to point to the internal function that retrieves the compass data from the native API. Checking if the field is non-null is a good way to see if compass tracking is currently active for this view.
+This method sets the [`AG.compass.listener`](listener.md) property to point to the internal function that retrieves the compass data from the native API. Checking if the property is non-null is a good way to see if compass tracking is currently active for this view.
 
 ## Returns 
 

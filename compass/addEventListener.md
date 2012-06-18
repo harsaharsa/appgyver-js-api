@@ -31,7 +31,7 @@ AG.compass.addEventListener(successCallback(heading, accuracy))
 
 The event listener is added for the current view. This is done by including the event listener's callback function into an array of callback functions that get triggered each time the device orientation changes.
 
-See the documentation for the [startTracking()](starttracking.md) method for more information about how the compass data gets updated.
+See the documentation for the [`AG.compass.startTracking`](starttracking.md) method for more information about how the compass data gets updated.
 
 ## Returns 
 * *string* **listener_id**
