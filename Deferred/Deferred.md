@@ -8,7 +8,7 @@ The returned Deferred object waits until some event or user interaction is over,
 
 The Deferred object thus provides basically the same functionalities as success and failure callbacks, but cleans up the code a bit. Note that a Deferred object can only be resolved or rejected once. It is also possible to add `done`, `fail` and `always` callback functions after the Deferred object is resolved or rejected. These functions will then be executed accordingly.
 
-If the method passes back some data in the form of a callback parameter, the same parameters are available for `Deferred.done` and `Deferred.fail` callbacks. Check each method's API documents for more information.
+If the method passes back some data in the form of a callback parameter, the same parameters are available for `Deferred.done` and `Deferred.fail` callbacks. 'Deferred.always' gets either the success or failure callback parameters, depending on if the Deferred was resolved or rejected. Check each method's API documents for more information.
 
 ## Example
 

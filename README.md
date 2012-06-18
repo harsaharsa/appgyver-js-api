@@ -1,10 +1,17 @@
 # Official appgyver.js API documentation.
 
-Appgyver.js is a JavaScript library used to access native features of your mobile device in your HTML5-based app. Think of it as a bridge between your application's HTML documents and your mobile device's hardware and proprietary software. Appgyver.js also provides you with some non-hardware related features, such as native GUI elements and transitions, useful abstractions of commonly used functions such as XMLHttpRequestsm and more.
+Appgyver.js is a JavaScript library used to access native features of your mobile device in your HTML5-based app. Think of it as a bridge between your application's HTML documents and your mobile device's hardware and proprietary software. Appgyver.js also provides you with some non-hardware related features, such as native GUI elements and transitions, useful abstractions of commonly used functions such as XMLHttpRequests and more.
 
-## appgyver.js core explained
+## Topics
 
-The appgyver.js core enables the communication channel between the developer's JavaScript code and the mobile device's functions. Once the DOM content of an HTML document in your app is loaded, appgyver.js core initializes and is ready to deliver messages to the device.
+* [geolocation](appgyver-js-api/tree/master/geolocation/geolocation.md)
+* [compass](appgyver-js-api/tree/master/compass/README.md)
+
+## The appgyver.js library explained
+
+The appgyver.js JavaScript library enables the communication channel between the developer's HTML5 code and the mobile device's functions. Once the DOM content of an HTML document in your app is loaded, appgyver.js core initializes and is ready to deliver messages to the device.
+
+In the following sections, we will go through some core features of the appgyver.js library that are shared among individual API calls, as well as detail how they interact with the native application layer.
 
 ### Callback functions
 
@@ -26,6 +33,16 @@ Each method's API documentation explains in more detail:
 * The success and failure conditions of the API calls, i.e. what happens in the native layer.
 * The type and contents of all callback parameters.
 
+### AppGyver views and layers
+
+The AppGyver Client renders your app's HTML5 content in WebKit-powered windows called **views**. This means that everything that works on a WebKit-based mobile browser will work in AppGyver: all fancy CSS transitions, third-party JavaScript libraries and so on. For iOS, the WebKit renderer is the same one that is used in Mobile Safari. For Android, the renderer.
+
+Currently, we are in the process of renewing our navigation and native GUI code, which means that Edge and normal modes have slightly different functionalities.
+
+In **normal mode**, each tab bar tab is a separate view. This means that changing between tabs leaves the original tab view intact, including all JavaScript that might be running. When you click on a link on a page, the view loads a new HTML5 page and discards the old one. If you go back to the original page e.g. via the native back button, the content is loaded from scratch. To preserve e.g. the scroll state of the original page, you should do it via separate JavaScript.
+
+In Edge mode navigation, the tabs are still separate views, but by using the (`AG.GUI.openLayer`)[appgyver-js-api/tree/master/GUI/openLayer.md] API call, you can open a new view on top of the current one as a "layer". The original page stays active and open under the layer, and once you click the native back button, the topmost layer is removed and the layer underneath becomes the one that is rendered. Think of it as laying down a new sheet of paper on top of the current view.
+
 ### Cross document transitions and navigation
 
 Appgyver.js uses native animated transitions between documents and automatically maintains navigation history throughout the app. This functions in a similar way to typical browser navigation, but uses the native GUI elements instead.
@@ -35,10 +52,3 @@ The `appgyver.js` library has the navigation extension included by default. All 
 To disable native transitions manually, use the `data-navigation="false"` data attribute in the link tag: `<a data-navigation="false", href="myLink.html">link</a>`
 
 To disable native transitions and navigation logic for the whole project, use the `appgyver.core.js` library instead. If you want, you can then load the navigation extension manually by loading `appgyver.extensions.navigation.js` after `appgyver.core.js` in the HTML code.
-
-## Topics
-
-* [geolocation](appgyver-js-api/tree/master/geolocation/geolocation.md)
-
-
-
