@@ -20,7 +20,7 @@ AG.compass.removeEventListener(listener_id)
 
 ## Native layer details, iOS
 
-The compass event listener with the given ID is removed from the current view.
+The compass event listener with the given ID is removed from the current view (by removing it from the array of event listeners).
 
 ## Returns 
 * *string* **listener_id**

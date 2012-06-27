@@ -1,9 +1,9 @@
-# AG.geolocation API #
+# AG.geolocation #
 
 The **AG.geolocation** namespace contains methods that give access to the device's native geolocation data.
 
 ## Methods ##
-* [AG.geolocation.getCurrentLocation](getCurrentLocation/getCurrentLocation.md)
+* [AG.geolocation.getCurrentLocation](methods/getCurrentLocation.md)
 
 ## Full example ##
 

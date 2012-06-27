@@ -15,7 +15,7 @@ You can have multiple compass event listeners in a single view. When you call th
 
 ## Properties ##
 
-* [AG.compass.listener](compass/listener.md)
+* [AG.compass.listener](properties/listener.md)
 
 ## Full example ##
 

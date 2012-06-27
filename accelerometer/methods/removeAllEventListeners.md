@@ -1,7 +1,7 @@
-# AG.compass.removeAllEventListeners
+# AG.accelerometer.removeAllEventListeners
 
 ## Summary
-`removeAllEventListener()` removes all compass event listeners from the current view.
+`removeAllEventListener()` removes all accelerometer event listeners from the current view.
 
 ## Quick example:
 ```javascript
@@ -19,7 +19,7 @@ No parameters.
 
 ## Native layer details, iOS
 
-All compass event listeners are removed from the current view (the array containing them is set to an empty array).
+All compass event listeners are removed from the current view (the array containing the callback functions is set to an empty array).
 
 ## Returns 
 
