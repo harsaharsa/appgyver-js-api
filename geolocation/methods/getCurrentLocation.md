@@ -19,10 +19,10 @@ AG.geolocation.getCurrentLocation(successCallback(coords), failureCallback)
 
 **Parameters**
 
-* *function* **successCallback**
+* *function* **successCallback**<br>
  Standard success callback function. The callback parameter is a string that contains the GPS coordinates in the syntax: `latitude,longitude`.
 
-* *function* **failureCallback**
+* *function* **failureCallback**<br>
  Standard failure callback function.
 
 ## Native layer details, iOS

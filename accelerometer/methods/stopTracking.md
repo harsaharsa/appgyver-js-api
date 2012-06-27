@@ -6,7 +6,7 @@
 
 By default, the device orientation is not tracked. The accelerometer must be switched on by the [`AG.accelerometer.startTracking`](startTracking.md) method. Accelerometer tracking is also view-specific, so this method only affects accelerometer event listeners in the current view.
 
-If this method is called while the accelerometer tracking is not active, it does nothing.
+If this method is called while accelerometer tracking is not active, it does nothing.
 
 ## Quick example:
 

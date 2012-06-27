@@ -6,7 +6,7 @@
 
 By default, the device orientation is not tracked. The compass must be switched on by this method. Compass tracking is also view-specific, so this method only affects compass event listeners in the current view.
 
-If this method is called while the compass tracking is active, it does nothing.
+If this method is called while compass tracking is active, it does nothing.
 
 ## Quick example:
 

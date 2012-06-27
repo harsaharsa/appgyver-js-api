@@ -6,7 +6,7 @@
 
 By default, the device orientation is not tracked. The accelerometer must be switched on by this method. Accelerometer tracking is also view-specific, so this method only affects accelerometer event listeners in the current view.
 
-If this method is called while the accelerometer tracking is active, it does nothing.
+If this method is called while accelerometer tracking is active, it does nothing.
 
 ## Quick example:
 
