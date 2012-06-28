@@ -4,8 +4,18 @@ Appgyver.js is a JavaScript library used to access native features of your mobil
 
 ## Topics
 
+* [AG.ajax](http://github.com/AppGyver/appgyver-js-api/tree/master/ajax/ajax.md)
+* [AG.camera](http://github.com/AppGyver/appgyver-js-api/tree/master/camera/camera.md)
+* [AG.compass](http://github.com/AppGyver/appgyver-js-api/tree/master/compass/compass.md)
+* [AG.device](http://github.com/AppGyver/appgyver-js-api/tree/master/device/device.md)
+* [AG.events](http://github.com/AppGyver/appgyver-js-api/tree/master/events/events.md)
+* [AG.file](http://github.com/AppGyver/appgyver-js-api/tree/master/file/file.md)
 * [AG.geolocation](http://github.com/AppGyver/appgyver-js-api/tree/master/geolocation/geolocation.md)
-* [AG.compass](http://github.com/AppGyver/appgyver-js-api/tree/master/compass/README.md)
+* [AG.GUI](http://github.com/AppGyver/appgyver-js-api/tree/master/GUI/GUI.md)
+* [AG.media](http://github.com/AppGyver/appgyver-js-api/tree/master/media/media.md)
+* [AG.navigation](http://github.com/AppGyver/appgyver-js-api/tree/master/navigation/navigation.md)
+* [AG.parameters](http://github.com/AppGyver/appgyver-js-api/tree/master/parameters/parameters.md)
+* [AG.storage](http://github.com/AppGyver/appgyver-js-api/tree/master/storage/storage.md)
 
 ## The appgyver.js library explained
 
