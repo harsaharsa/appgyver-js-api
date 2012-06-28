@@ -20,7 +20,7 @@ AG.accelerometer.addEventListener( successCallback(acceleration, accelerationInc
 **Parameters**
 
 * *function* **successCallback**<br>
-  Standard success callback function. The callback parameters are as follows:
+ The success callback function's callback parameters contain data from the accelerometer, as follows:
   
     * *object* **acceleration**<br>
     The acceleration that the user is giving to the device. The acceleration data are expressed in m/s&sup2; and use the following x, y, and z axis properties:

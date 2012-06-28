@@ -21,7 +21,7 @@ AG.compass.addEventListener( successCallback(heading, accuracy) )
 **Parameters**
 
 * *function* **successCallback**<br>
- Standard success callback function. The callback parameters are as follows:
+ The success callback function's callback parameters contain data from the compass, as follows:
     * *double* **heading**<br>
     Compass heading, in degrees relative to magnetic north, increasing clockwise.
     * *double* **accuracy**<br>

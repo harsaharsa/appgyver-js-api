@@ -20,7 +20,7 @@ AG.gyroscope.addEventListener( successCallback(alpha, beta, gamma) )
 **Parameters**
 
 * *function* **successCallback**<br>
-    Standard success callback function. The callback parameters contain data from the gyroscope, namely the angles of rotation, as follows:
+    The success callback function's callback parameters contain data from the gyroscope, namely the angles of rotation, as follows:
 
         * *double* **alpha**
         The rotation, in degrees, of the device frame around its z-axis. Values are between 0 and 360.
