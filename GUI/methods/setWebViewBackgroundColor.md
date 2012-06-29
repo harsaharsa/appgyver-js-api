@@ -15,7 +15,7 @@ AG.GUI.setTopBarImagePath(color)
 
 **Parameters**
 
-* *string* **color**
+* *string* **color**<br>
   An RGBA value, with each color represented as two hexadecimal digits.
 
 ## Returns

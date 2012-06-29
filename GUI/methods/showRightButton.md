@@ -21,9 +21,9 @@ AG.GUI.showNavigationBarRightButton(title, recurringCallback)
 
 **Parameters**
 
-* *string* **title**
+* *string* **title**<br>
   The text shown on the button.
-* *function* **recurringCallback**
+* *function* **recurringCallback**<br>
   A function that gets called every time the button is tapped.
 
 ## Returns

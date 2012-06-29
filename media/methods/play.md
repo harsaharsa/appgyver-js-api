@@ -1,7 +1,7 @@
 # AG.media.play
 
 ## Summary
-`play()` plays an audio file from the app's file system. Supported formats include .aiff, .mp3 and .wav.
+`play()` plays an audio file from the app's file system. Supported formats include .aiff, .mp3, .ogg and .wav.
 
 Note that playing .mp3 files has a slight delay compared to .wav files due to the decoding process.
 

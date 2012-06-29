@@ -17,7 +17,7 @@ AG.GUI.setTopBarImagePath(effect)
 
 **Parameters**
 
-* *string* **effect**
+* *string* **effect**<br>
   The name of the effect used to remove the splash screen. Possible values are:
     * `fade`
     * `slideFromLeft`

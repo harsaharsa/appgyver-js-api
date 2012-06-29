@@ -19,11 +19,11 @@ AG.GUI.openLayer(location)
 
 **Parameters**
 
-* *string* **location**
+* *string* **location**<br>
   The local URL pointing to the HTML document that will be opened on the new layer.
 
 ## Returns
 Nothing.
 
 ## Supported platforms
-* iOS
+* iOS, Android

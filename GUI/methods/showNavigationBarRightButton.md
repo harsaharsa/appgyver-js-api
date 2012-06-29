@@ -36,4 +36,4 @@ AG.GUI.showNavigationBarRightButton(title, recurringCallback, successCallback, f
 Nothing.
 
 ## Supported platforms
-* iOS
+* iOS, Android

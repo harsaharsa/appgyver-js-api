@@ -22,16 +22,16 @@ AG.gyroscope.addEventListener( successCallback(alpha, beta, gamma) )
 * *function* **successCallback**<br>
     The success callback function's callback parameters contain data from the gyroscope, namely the angles of rotation, as follows:
 
-        * *double* **alpha**
-        The rotation, in degrees, of the device frame around its z-axis. Values are between 0 and 360.
-        * *double* **beta**
-        The rotation, in degrees, of the device frame around its x-axis. Values are between -90 and 90.
-        * *double* **gamma**
-        The rotation, in degrees, of the device frame around its y-axis. Values are between -180 and 180.
+        * *double* **alpha**<br>
+          The rotation, in degrees, of the device frame around its z-axis. Values are between 0 and 360.
+        * *double* **beta**<br>
+          The rotation, in degrees, of the device frame around its x-axis. Values are between -90 and 90.
+        * *double* **gamma**<br>
+          The rotation, in degrees, of the device frame around its y-axis. Values are between -180 and 180.
 
-        Note that the angles of rotation do not represent the device's real world orientation. They are defined as an offset from an arbitrary direction — typically, the direction in which the device was held when the orientation was first obtained. Therefore, you can only use the angles to track changes in orientation, you cannot derive the direction in which the device is currently facing.
+            Note that the angles of rotation do not represent the device's real world orientation. They are defined as an offset from an arbitrary direction — typically, the direction in which the device was held when the orientation was first obtained. Therefore, you can only use the angles to track changes in orientation, you cannot derive the direction in which the device is currently facing.
 
-        If the device does not have a gyroscope, these objects are null.
+            If the device does not have a gyroscope, these objects are null.
 
 ## Native layer details, iOS
 

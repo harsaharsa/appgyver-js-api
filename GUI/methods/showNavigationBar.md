@@ -17,11 +17,11 @@ AG.GUI.showNavigationBar(title)
 
 **Parameters**
 
-* *string* **title**
+* *string* **title**<br>
   The title text shown on the navigation bar.
 
 ## Returns
 Nothing.
 
 ## Supported platforms
-* iOS
+* iOS, Android

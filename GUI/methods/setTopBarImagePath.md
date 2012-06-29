@@ -15,7 +15,7 @@ AG.GUI.setTopBarImagePath(path)
 
 **Parameters**
 
-* *string* **path**
+* *string* **path**<br>
   The path for the image. The path is relative to your app's `views` directory.
 
 ## Returns
