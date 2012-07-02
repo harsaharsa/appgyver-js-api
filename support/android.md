@@ -6,7 +6,7 @@ The [Android Preview client](https://play.google.com/store/apps/details?id=com.a
 
 * [AG.camera.choosePicture](../topics/camera/methods/choosePicture.md)
 * [AG.device.getLocale](../topics/device/methods/getLocale.md)
-* [AG.events.addEventListener](../topics/events/methods/addEventListener.md) (../topics/Edge mode events only)
+* [AG.events.addEventListener](../topics/events/methods/addEventListener.md) (Edge mode events only)
 * [AG.events.removeAllEventListeners](../topics/events/methods/removeAllEventListeners.md)
 * [AG.file.download](../topics/file/methods/download.md)
 * [AG.file.preview](../topics/file/methods/preview.md)
