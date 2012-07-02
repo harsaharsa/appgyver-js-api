@@ -4,18 +4,18 @@ Appgyver.js is a JavaScript library used to access native features of your mobil
 
 ## Topics
 
-* [AG.ajax](http://github.com/AppGyver/appgyver-js-api/tree/master/ajax/ajax.md)
-* [AG.camera](http://github.com/AppGyver/appgyver-js-api/tree/master/camera/camera.md)
-* [AG.compass](http://github.com/AppGyver/appgyver-js-api/tree/master/compass/compass.md)
-* [AG.device](http://github.com/AppGyver/appgyver-js-api/tree/master/device/device.md)
-* [AG.events](http://github.com/AppGyver/appgyver-js-api/tree/master/events/events.md)
-* [AG.file](http://github.com/AppGyver/appgyver-js-api/tree/master/file/file.md)
-* [AG.geolocation](http://github.com/AppGyver/appgyver-js-api/tree/master/geolocation/geolocation.md)
-* [AG.GUI](http://github.com/AppGyver/appgyver-js-api/tree/master/GUI/GUI.md)
-* [AG.media](http://github.com/AppGyver/appgyver-js-api/tree/master/media/media.md)
-* [AG.navigation](http://github.com/AppGyver/appgyver-js-api/tree/master/navigation/navigation.md)
-* [AG.parameters](http://github.com/AppGyver/appgyver-js-api/tree/master/parameters/parameters.md)
-* [AG.storage](http://github.com/AppGyver/appgyver-js-api/tree/master/storage/storage.md)
+* [AG.ajax](topics/ajax/ajax.md)
+* [AG.camera](topics/camera/camera.md)
+* [AG.compass](topics/compass/compass.md)
+* [AG.device](topics/device/device.md)
+* [AG.events](topics/events/events.md)
+* [AG.file](topics/file/file.md)
+* [AG.geolocation](topics/geolocation/geolocation.md)
+* [AG.GUI](topics/GUI/GUI.md)
+* [AG.media](topics/media/media.md)
+* [AG.navigation](topics/navigation/navigation.md)
+* [AG.parameters](topics/parameters/parameters.md)
+* [AG.storage](topics/storage/storage.md)
 
 ## The appgyver.js library explained
 
@@ -43,17 +43,19 @@ Each method's API documentation explains in more detail:
 * The success and failure conditions of the API calls, i.e. what happens in the native layer.
 * The type and contents of all callback parameters.
 
-Instead of giving the callback functions as parameters, you can use the appgyver.js implementation of [Deferred objects](http://github.com/AppGyver/appgyver-js-api/tree/master/Deferred/Deferred.md) to manage them. The methods that support this return an `AG.Deferred()` object.
+Instead of giving the callback functions as parameters, you can use the appgyver.js implementation of [Deferred objects](topics/Deferred/Deferred.md) to manage them. The methods that support this return an `AG.Deferred()` object.
 
 ### AppGyver views and layers
 
 The AppGyver Client renders your app's HTML5 content in WebKit-powered windows called **views**. This means that everything that works on a WebKit-based mobile browser will work in AppGyver: all fancy CSS transitions, third-party JavaScript libraries and so on. For iOS, the WebKit renderer is the same one that is used in Mobile Safari. For Android, the renderer.
 
-Currently, we are in the process of renewing our navigation and native GUI code, which means that Edge and normal modes have slightly different functionalities.
+Currently, we are in the process of renewing our navigation and native GUI code. To help the transition, our Preview client currently has two modes: Edge and normal mode. (A project's mode can be set under its *Config* tab in Studio. Normal mode is recommended for actual development.)
+
+For the time being, Edge and normal modes have slightly different functionalities when it comes to navigation and rendering content: 
 
 In **normal mode** navigation, each tab bar tab is a separate view. This means that changing between tabs leaves the original tab view intact, including all JavaScript that might be running. When you click on a link on a page, the view loads a new HTML5 page and discards the old one. If you go back to the original page e.g. via the native back button, the content is loaded from scratch. To preserve e.g. the scroll state of the original page, you should do it via separate JavaScript.
 
-In **Edge mode** navigation, the tabs are still separate views, but by using the [`AG.GUI.openLayer`](http://github.com/AppGyver/appgyver-js-api/tree/master/GUI/openLayer.md) API call, you can open a new view on top of the current one as a "layer". The original page stays active and open under the layer, and once you click the native back button, the topmost layer is removed and the layer underneath becomes the one that is rendered. Think of it as laying down a new sheet of paper on top of the current view.
+In **Edge mode** navigation, the tabs are still separate views, but by using the [`AG.GUI.openLayer`](GUI/openLayer.md) API call, you can open a new view on top of the current one as a "layer". The original page stays active and open under the layer, and once you click the native back button, the topmost layer is removed and the layer underneath becomes the one that is rendered. Think of it as laying down a new sheet of paper on top of the current view.
 
 ### Cross document transitions and navigation
 
@@ -64,3 +66,9 @@ The appgyver.js library has the navigation extension included by default. All `<
 To disable native transitions manually, use the `data-navigation="false"` data attribute in the link tag: `<a data-navigation="false", href="myLink.html">link</a>`
 
 To disable native transitions and navigation logic for the whole project, use the appgyver.core.js library instead. If you want, you can then load the navigation extension manually by loading appgyver.extensions.navigation.js after appgyver.core.js in the HTML code.
+
+### Supported platforms
+
+The latest version of appgyver.js is currently supported by both the [iOS](http://itunes.apple.com/us/app/appgyver-preview/id479747411) and [Android](https://play.google.com/store/apps/details?id=com.appgyver.android) versions of the Preview client.
+
+The Android Preview client is still an early release and the API hasn't been implemented completely, so please see the [Android support](support/android.md) page for a list of supported API calls.
