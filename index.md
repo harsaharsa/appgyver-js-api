@@ -1,4 +1,4 @@
-# Official appgyver.js API documentation
+# Official appgyver.js API documentation, version 0.9.0
 
 Appgyver.js is a JavaScript library used to access native features of your mobile device in your HTML5-based app. Think of it as a bridge between your application's HTML documents and your mobile device's hardware and proprietary software. Appgyver.js also provides you with some non-hardware related features, such as native GUI elements and transitions, useful abstractions of commonly used functions such as XMLHttpRequests and more.
 
