@@ -40,8 +40,8 @@ camera.choosePicture(options, successCallback(data), failureCallback);
   The success callback receives a parameter object from the native layer:
     * *object* **data**<br>
         An object containing the captured image's file path, stored in the property:
-    * *string* **imagePath**<br>
-        A string containing the path of the captured image in the device's file system.
+      * *string* **imagePath**<br>
+          A string containing the path of the captured image in the device's file system.
 
 * *function* **failureCallback**<br>
     The failure callback function.
