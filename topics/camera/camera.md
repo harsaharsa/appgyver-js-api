@@ -32,7 +32,7 @@ The **AG.camera** namespace contains methods that give access to the mobile devi
           media.appendChild(img);
         };
         var failure = function(){
-          alert("User did not take picture");
+          AG.GUI.alert("User did not take a picture");
         };
         AG.camera.takePicture(unique_file_name, success, failure);
       });
@@ -47,18 +47,35 @@ The **AG.camera** namespace contains methods that give access to the mobile devi
           media.appendChild(video);
         };
         var failure = function(){
-          alert("User did not record video");
+          AG.GUI.alert("User did not record a video");
         };
         AG.camera.takeVideo(unique_file_name, success, failure);
       });
-    }, false);
+      
+      document.getElementById("choose_picture").addEventListener("touchstart", function(){
+        var unique_file_name = "" + (new Date()).getTime() + "_pic.png";
+        var success = function(data){
+          var img = document.createElement("img");
+          img.src = data.imagePath;
+          img.style.width = "150px";
+          img.style.height = "150px;";
+          media.appendChild(img);
+        };
+        var failure = function(){
+          AG.GUI.alert("User did not choose a picture");
+        };
+        AG.camera.choosePicture({filename: unique_file_name}, success, failure);
+      });
+      
+    });
     </script>
   </head>
   <body>
     <h1>AG.camera example</h1>
 
-    <a href="#" id="take_picture" data-navigation="false">Take Picture</a>
-    <a href="#" id="record_video" data-navigation="false">Record a Video</a>
+    <a href="#" id="take_picture" data-navigation="false">Take Picture</a><br><br>
+    <a href="#" id="record_video" data-navigation="false">Record a Video</a><br><br>
+    <a href="#" id="choose_picture" data-navigation="false">Open Choose Picture Dialogue</a>
     <div id="media"></div>
 
   </body>
